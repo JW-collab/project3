@@ -217,7 +217,173 @@
     </div><!--container end-->
     
     </div><!--wrapper end-->
+    <div class="wrapper_">
+        <nav class="mainnav">
+            <div id="opennav_" class="sidenav">
+                  <a href="/index.html" class="navtitle">HOME</a>
+                  <a href="/aboutbrew.html" class="navtitle">ABOUT</a>
+                  <a href="/menu.html" class="navtitle">MENU</a>
+                  <a href="/stores.html" class="navtitle">STORES</a>
+                  <a href="#" id="close_menu_" class="closebtn">&times;</a>
+            </div>
+
+            <div id="closenav_" class="sidenav">
+              <a href="/index.html"><img src="images/icon.png" alt="Home" class="m_home"></a>
+              <a href="#" id="open_menu_" class="h_icon">&#9776;</a>
+            </div>
+            <script>
+                $(function(){
+
+                    $("#opennav_").hide();
+                    $("#open_menu_").on("click", function(){
+                      console.log('menu is clicked and opened')
+                        $("#opennav_, #closenav_").toggle();
+                    });
+
+                    $("#close_menu_").on("click", function(){
+                      console.log('menu is being closed')
+                        $("#opennav_, #closenav_").toggle();
+                    });
+                });
+            </script>
+            
+        
+
+        </nav><!--header end-->
+        
+        
+    <div class="container">
+
+        <div class="home_content">
+        <div class="slides">
+            <ul>
+                <li id="slide1_">      
+                    <div class="content_box">
+                        <div class="s1_title">
+                        <img src="images/hometitle1.png" style="width:80%;height:auto;">
+                        </div>
+                        <div class="s1_text">
+                            <h3>To celebrate the fourth anniversary, our store offers a 10% discount on all coffee from April 1 to May 1. Visit the nearby store and take a tasty bite of our menu!</h3>
+                        </div>
+                        <div class="button_">
+                            <a href="/stores.html" class="s1_button">
+                             SEARCH THE NEARBY STORES
+                            </a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li id="slide2_">
+                    <div class="content_box">
+                        <div class="s2_title">
+                        <img src="images/hometitle2_1.png" style="width:339px;height:167px;margin-bottom: 24px;">
+                        <h3 style="text-align:center;"> 
+                            Try our special lemon mint tea<br>
+                            and kiwi apple fappucino. 
+                        </h3>
+                        <div class="button_">
+                            <a href="#" class="s2_button">
+                             GO TO MENU
+                            </a>
+                        </div>
+                        </div>
+                        <div class="s2_right">
+                        <img src="images/hometitle2_2.png" style="width:800px;height:auto;">
+                        </div>
+                    </div>
+                </li>
+                <li id="slide3_">
+                    <div class="content_box">
+                        <div class="s3_title">
+                            <img src="images/hometitle3.png" style="width:390px;height:151px;margin-bottom: 24px;">
+                        </div>
+                        <div class="s3_text">
+                            <h3>The chance to take a barista class taught by <b>William Steve</b>, <br>who won the World Barista Championship. </h3>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li id="slide4_">
+                    <div class="content_box">
+                        <div class="exp4">
+                            <h1>
+                                NEW<br>PRODUCT<br>RELEASED
+                            </h1>
+                            <button class="button">
+                                Order Now!
+                            </button>
+                            
+                        </div>
+                        <div class="img4">
+                            <img src="images/tinproduct.png">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+        //<![CDATA[ 
+
+        var shown = 0;
+        var slides = $(".slides li");
+
+        $(function () {
+            $('.links a').click(function (e) {
+                e.preventDefault();
+                var h = $(".slides").height();
+                var clicked = $('.links a').index(this);
+                var toShowSlide = slides.eq(clicked);
+                var toHideSlide = slides.eq(shown);
+                if (clicked > shown) {
+                    toHideSlide.animate({
+                        "top": "-" + h + "px"
+                    }, "slow");
+                    toShowSlide.css({
+                        "top": h + "px"
+                    }).show().animate({
+                        "top": 0
+                    }, "slow");
+                    shown = clicked;
+                } else if (clicked < shown) {
+                    toHideSlide.animate({
+                        "top": h + "px"
+                    }, "slow");
+                    toShowSlide.css({
+                        top: "-" + h + "px"
+                    }).show().animate({
+                        "top": 0
+                    }, "slow");
+                    shown = clicked;
+                }
+            });
+
+            $(window).bind('mousewheel DOMMouseScroll', function (event) {
+            if (slides.filter(":animated").length > 0) { return; } 
+                if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+                    // scroll up
+                    if (shown > 0) { 
+                        $('.links a').eq(shown - 1).triggerHandler("click");
+                    }
+                } else {
+                    // scroll down
+                    if (shown < slides.length-1) {
+                        $('.links a').eq(shown + 1).triggerHandler("click");			
+                    } 
+
+                }
+            });
+
+
+        });
+
+        //]]>  
+        </script>
+        
+        </div><!--home_content end-->
+   
+    </div><!--container end-->
     
+    </div><!--wrapper end-->
 
 </body>
 
