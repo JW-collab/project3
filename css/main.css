@@ -560,8 +560,7 @@ a {
     /*footer*/
     #footer {
         position: relative;
-        margin-left: 98px;
-        padding: 30px 13% 20px 0%;
+        padding: 30px 3% 20px 3%;
         height: 300px;
         width: 100%;
         background-color: #51322D;

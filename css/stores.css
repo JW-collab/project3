@@ -150,5 +150,29 @@
 }
 
 @media only screen and (max-width: 767px) {
-.wrap{width:320px;}
+    .m_hide {
+        display: none;
+    }
+
+    #opennav {
+        width: 100%;
+    }
+    #closenav {
+        width: 100%;
+    }
+    
+    .icon{
+        visibility: hidden;
+    }
+    
+    #close_menu{
+        margin-right: 20px;
+    }
+    #open_menu{
+        margin-right:20px;
+    }
+    
+    #close_menu{
+        margin-top:20px;
+    }
 }
