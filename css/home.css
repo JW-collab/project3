@@ -62,7 +62,7 @@
     }
 
     #slide1 {
-        background-image: url("/images/newslide-03.png");
+        background-image: url("../images/newslide-03.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
@@ -107,7 +107,7 @@
     }
 
     #slide2 {
-        background-image: url("/images/newslide-02.png");
+        background-image: url("../images/newslide-02.png");
         display: none;
         padding-right: 98px;
         background-repeat: no-repeat;
@@ -148,7 +148,7 @@
 
 
     #slide3 {
-        background-image: url("/images/slide3.png");
+        background-image: url("../images/slide3.png");
         display: none;
         background-repeat: no-repeat;
         background-size: cover;
@@ -171,7 +171,7 @@
     }
 
     #slide4 {
-        background-image: url("/images/newslide-01.png");
+        background-image: url("../images/newslide-01.png");
         display: none;
         background-repeat: no-repeat;
         background-size: cover;
@@ -182,7 +182,9 @@
 
     .exp4 {
         width: 40%;
+        height:300px;
         padding-left: 5%;
+        margin-top: 80px;
         text-align: left;
         display: flex;
         flex-flow: column nowrap;
@@ -216,7 +218,7 @@
         font-weight: 600;
         width: 200px;
         height: auto;
-        margin-bottom: 40%;
+        margin-top: 44px;
     }
 
     /*home-slides end*/
@@ -261,7 +263,7 @@
     }
 
     #slide1 {
-        background-image: url("/images/newslide-03.png");
+        background-image: url("../images/newslide-03.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
@@ -306,7 +308,7 @@
     }
 
     #slide2 {
-        background-image: url("/images/newslide-02.png");
+        background-image: url("../images/newslide-02.png");
         display: none;
         padding-right: 98px;
         background-repeat: no-repeat;
@@ -348,7 +350,7 @@
 
 
     #slide3 {
-        background-image: url("/images/slide3.png");
+        background-image: url("../images/slide3.png");
         display: none;
         background-repeat: no-repeat;
         background-size: cover;
@@ -371,7 +373,7 @@
     }
 
     #slide4 {
-        background-image: url("/images/newslide-01.png");
+        background-image: url("../images/newslide-01.png");
         display: none;
         background-repeat: no-repeat;
         background-size: cover;
