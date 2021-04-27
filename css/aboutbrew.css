@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+*{
+    margin:0;padding:0;box-sizing:border-box;
+    width: auto;
+}
+
+@media only screen and (min-width: 1176px) {
+/*head content*/
+.titlebox{
+    min-width: 100%;
+    height: 450px;
+    display: flex;
+    align-items:flex-start;
+    flex-flow: row wrap;
+    background-image:url(/images/aboutbrew_title.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding:120px 6%;
+}
+
+#title_id{
+    position: relative;
+    height:auto;
+    margin:0;
+
+}
+
+#title_text{
+    position: relative;
+    height:auto;
+    margin-top: 20px;
+    padding-right: 98px;
+}
+
+/*body content*/
+    .imagebox{
+        display:none;
+    }
+    .sliderbox{
+        position:relative;
+        margin-top: 44px;
+        margin-bottom: 150px;
+        width:70%;
+        height:700px; 
+        border:2px solid #000;
+        overflow:hidden;
+    }
+
+
+    .bxslider img{
+        min-width:100%;
+        min-height:700px;
+
+    }
+
+   
+    .bx-pager{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top:600px;
+        left:50%;
+        z-index:80;
+}
+
+    .bx-pager a{background-color:#C4C4C4!important;z-index: 99;}
+    .bx-pager a.active{background-color:#E74536!important; z-index: 99;}
+    
+    .bx-controls-auto{
+    position:absolute;top:100px; right:0;width:100px;height:30px;
+    z-index:9999;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1175px) {
+/*head content*/
+.titlebox{
+    width:100%;
+    height: 500px;
+    display: flex;
+    align-items:flex-start;
+    flex-flow: row wrap;
+    background-image:url(/images/aboutbrew_title.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding:120px 3%;
+}
+
+#title_id{
+    position: relative;
+    width:100%;
+    height:auto;
+    margin:0;
+
+}
+
+#title_text{
+    position: relative;
+    margin-top: 24px;
+    width: 600px;
+}
+
+/*body content*/
+    .imagebox{
+        display: flex;
+        flex-flow: column wrap;
+        position:relative;
+        margin: 44px auto 150px auto;
+        height:auto;
+    }
+    
+    .size{
+        width:500px;
+        height:350px;
+        margin-bottom: 24px;
+    }
+
+    .sliderbox{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+.wrap{width:320px;}
+}

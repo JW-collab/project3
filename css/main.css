@@ -1,0 +1,573 @@
+@charset "utf-8";
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 1176px) {
+
+    /*common*/
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    body {
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+    }
+
+    h1 {
+        font-family: 'Patua One', cursive;
+        font-size: 60px;
+        line-height: 1.12;
+        color: white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-family: 'Patua One', cursive;
+        font-size: 48px;
+        line-height: 1.2;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+
+
+    h3 {
+        font-size: 24px;
+        color: white;
+        font-weight: 500;
+        -webkit-text-stroke-width: 0.2px;
+        -webkit-text-stroke-color: black;
+
+    }
+
+    h4 {
+        font-family: Patua One;
+        font-weight: normal;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+
+    }
+
+    /*global*/
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: block
+    }
+
+    .screen_out {
+        position: absolute;
+        top: -999em
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /*nav*/
+    .mainnav {
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        text-align: center;
+        height: 100%;
+    }
+
+    .sidenav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #E74536;
+        overflow: hidden;
+    }
+
+    .sidenav a {
+        font-family: 'Patua One', cursive;
+        text-decoration: none;
+        font-size: 28px;
+        color: #FAD7D4;
+        display: block;
+    }
+
+    .navtitle {
+        height: 200px;
+    }
+
+    .sidenav a:hover {
+        color: #ffffff;
+    }
+
+
+    #opennav {
+        width: 250px;
+
+    }
+
+    #closenav {
+        width:98px;
+    }
+
+    .m_home {
+        margin: 30px 9px 60px 9px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .closebtn {
+        text-align: left;
+        margin-left: 35px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #closenav {
+        overflow-x: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+    .icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .h_icon {
+        margin-top:10px;
+    }
+
+    /*wrapper*/
+    .wrapper {
+        display: flex;
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    /*container*/
+    .container {
+        height: auto;
+        background-color: #D3D3D3;
+    }
+
+    /*home_content*/
+    .home_content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-left: 98px;
+        min-width: 1176px;
+    }
+
+    /*footer*/
+    #footer {
+        position: relative;
+        margin-left: 98px;
+        padding: 40px 15% 40px 10%;
+        height: 300px;
+        width: 100%;
+        background-color: #51322D;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1175px) {
+
+    /*common*/
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    body {
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+    }
+
+    h1 {
+        font-family: 'Patua One', cursive;
+        font-size: 60px;
+        line-height: 1.12;
+        color: white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-family: 'Patua One', cursive;
+        font-size: 48px;
+        line-height: 1.2;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+
+
+    h3 {
+        font-size: 24px;
+        color: white;
+        font-weight: 500;
+        -webkit-text-stroke-width: 0.2px;
+        -webkit-text-stroke-color: black;
+
+    }
+
+    h4 {
+        font-family: Patua One;
+        font-weight: normal;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+
+    }
+
+    /*global*/
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: block
+    }
+
+    .screen_out {
+        position: absolute;
+        top: -999em
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /*nav*/
+    .mainnav {
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        text-align: center;
+        height: 100%;
+    }
+
+    .sidenav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #E74536;
+        overflow: hidden;
+    }
+
+    .sidenav a {
+        font-family: 'Patua One', cursive;
+        text-decoration: none;
+        font-size: 28px;
+        color: #FAD7D4;
+        display: block;
+    }
+
+    .navtitle {
+        height: 200px;
+    }
+
+    .sidenav a:hover {
+        color: #ffffff;
+    }
+
+
+    #opennav {
+        width: 250px;
+
+    }
+
+    #closenav {
+        width: 98px;
+    }
+
+    .m_home {
+        margin: 30px 9px 60px 9px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .closebtn {
+        text-align: left;
+        margin-left: 35px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #closenav {
+        overflow-x: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+    .icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .h_icon {
+        margin-bottom: 30%;
+    }
+
+    /*wrapper*/
+    .wrapper {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+
+    /*container*/
+    .container {
+        height: auto;
+        background-color: #D3D3D3;
+    }
+
+    /*home_content*/
+    .home_content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-left: 98px;
+    }
+
+    /*footer*/
+    #footer {
+        position: relative;
+        margin-left: 98px;
+        padding: 30px 13% 20px 0%;
+        height: 300px;
+        width: 100%;
+        background-color: #51322D;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    /*common*/
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    body {
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+    }
+
+    h1 {
+        font-family: 'Patua One', cursive;
+        font-size: 60px;
+        line-height: 1.12;
+        color: white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-family: 'Patua One', cursive;
+        font-size: 48px;
+        line-height: 1.2;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+
+
+    h3 {
+        font-size: 24px;
+        color: white;
+        font-weight: 500;
+        -webkit-text-stroke-width: 0.2px;
+        -webkit-text-stroke-color: black;
+
+    }
+
+    h4 {
+        font-family: Patua One;
+        font-weight: normal;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+
+    }
+
+    /*global*/
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: block
+    }
+
+    .screen_out {
+        position: absolute;
+        top: -999em
+    }
+    .modal{
+        display:none;
+    }
+
+    /*nav*/
+    .mainnav {
+        display: flex;
+        position: fixed;
+        width:100%;
+        z-index: 10;
+        top: 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .sidenav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #E74536;
+        overflow: hidden;
+    }
+
+    .sidenav a {
+        font-family: 'Patua One', cursive;
+        text-decoration: none;
+        font-size: 20px;
+        color: #FAD7D4;
+        display: block;
+    }
+
+    .navtitle {
+        width:auto;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .sidenav a:hover {
+        color: #ffffff;
+    }
+
+
+    #opennav_ {
+        height:60px;
+        
+    }
+
+    #closenav_ {
+        height: 60px;
+        overflow-x: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+    .m_home {
+        margin: 10px 10px 10px 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .closebtn {
+        text-align: left;
+        margin-left: 10px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .h_icon {
+        margin:auto;
+    }
+
+    /*wrapper*/
+    .wrapper {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+
+    /*container*/
+    .container {
+        height: auto;
+        background-color: #D3D3D3;
+    }
+
+    /*home_content*/
+    .home_content {
+        width:100%;
+        height:auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    /*footer*/
+    #footer {
+        position: relative;
+        margin-left: 98px;
+        padding: 30px 13% 20px 0%;
+        height: 300px;
+        width: 100%;
+        background-color: #51322D;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
