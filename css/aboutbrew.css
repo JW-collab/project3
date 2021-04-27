@@ -112,7 +112,7 @@
     .size{
         width:500px;
         height:350px;
-        object-fit: fill;
+        margin-bottom: 24px;
     }
 
     .sliderbox{
