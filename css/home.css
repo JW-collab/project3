@@ -428,7 +428,41 @@
     .wrapper{
         display:none;
     }
+    .wrapper_{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    /*nav content*/
+    .m_hide {
+        display: none;
+    }
+    
+    .sidenav{
+        display:flex;
+        justify-content: space-between;
+    }
 
+    #opennav_ {
+        width: 100%;
+    }
+    #closenav_ {
+        width: 100%;
+    }
+    
+    .icon{
+        visibility: hidden;
+    }
+    
+    #close_menu_{
+        margin-right: 20px;
+        margin-top:20px;
+    }
+    #open_menu_{
+        margin-right:20px;
+    }
+    
     /*home-slides*/
 
 

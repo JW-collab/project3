@@ -503,17 +503,6 @@ a {
     }
 
 
-    #opennav_ {
-        height:60px;
-        
-    }
-
-    #closenav_ {
-        height: 60px;
-        overflow-x: hidden;
-        transition: 0.5s ease-in-out;
-    }
-
     .m_home {
         margin: 10px 10px 10px 10px;
         width: 40px;

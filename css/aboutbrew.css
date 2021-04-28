@@ -131,11 +131,17 @@
         margin: 44px auto 150px auto;
         height: auto;
     }
+    
 
     .size {
-        width: 500px;
-        height: 350px;
+        width: 100%;
+        height: 400px;
         margin-bottom: 24px;
+        object-fit: contain;
+    }
+    
+    .size_{
+        display: none;
     }
 
     .sliderbox {
@@ -144,9 +150,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .m_hide {
-        display: none;
-    }
 
     #opennav {
         width: 100%;
@@ -161,14 +164,12 @@
     
     #close_menu{
         margin-right: 20px;
+        margin-top:20px;
     }
     #open_menu{
         margin-right:20px;
     }
     
-    #close_menu{
-        margin-top:20px;
-    }
 
     /*head content*/
     .titlebox {
@@ -201,16 +202,22 @@
     .imagebox {
         display: flex;
         flex-flow: column wrap;
+        justify-content: center;
         position: relative;
         margin: 44px 0 150px 0;
         height: auto;
     }
 
-    .size {
-        width: 100%;
-        height: 100vh;
-        margin-bottom: 24px;
+    .size_ {
+        width: auto;
+        height: 92vh;
+        min-height:700px;
+        margin: 0 auto 24px auto;
         object-fit: contain;
+    }
+    
+    .size{
+        display: none;
     }
 
     .sliderbox {
